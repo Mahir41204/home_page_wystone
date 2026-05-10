@@ -332,7 +332,7 @@
             transform: translateY(-2px);
         }
 
-        /* Coming Soon Card Styles */
+        /* Preview Card Styles */
         .card.disabled {
             opacity: 0.6;
             background-color: var(--bg-secondary);
@@ -682,45 +682,40 @@
                         <div class="card-header">
                             <h3 class="card-title">Docker</h3>
                         </div>
-                        <p>Learn Docker from basics to advanced with practical examples and compose configurations.</p>
-                        <a href="https://docker.wystone.tech" class="card-btn">Open Docs</a>
+                        <p>Docker is the foundation of this learning path because it gives you a repeatable way to package software, move it between environments, and explain exactly what is running on a machine. The full section will cover the Docker CLI, images, containers, Dockerfiles, tags, registries, Compose files, networks, volumes, and the security tradeoffs that matter once a project leaves your laptop. Learners will find command references, troubleshooting notes, and practical examples that show how to inspect containers, control resources, and keep builds reproducible. The path is structured from L0 basics through L4 production workflows, so beginners can start with `docker run` while more advanced readers work toward multi-container stacks, health checks, and image hardening.</p>
+                        <a href="https://docker.wystone.tech" class="card-btn">Open Docker Docs</a>
                     </div>
 
-                    <!-- Coming Soon Cards -->
-                    <div class="card disabled">
+                    <!-- Kubernetes Preview -->
+                    <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Kubernetes</h3>
-                            <span class="badge">Coming Soon</span>
                         </div>
-                        <p>Master container orchestration, pods, services, and deployments at scale.</p>
-                        <button class="card-btn" disabled>Coming Soon</button>
+                        <p>Kubernetes is the natural next step after Docker when you need scheduling, scaling, and self-healing for containers across multiple machines. This section will introduce the control plane, nodes, pods, deployments, ReplicaSets, services, ingress, and the core ideas behind declarative operations. It will also cover why Kubernetes matters in real teams: it standardizes how applications are deployed, how updates roll out, how workloads recover from failure, and how platform teams create shared infrastructure without hand-holding every app. When the full docs launch, learners will find guided explanations, manifest examples, debugging tips, and a practical path from single-node experiments to cluster-level thinking. The goal is to make the terminology and moving parts understandable before you ever touch production.</p>
                     </div>
 
-                    <div class="card disabled">
+                    <!-- CI/CD Preview -->
+                    <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">CI/CD</h3>
-                            <span class="badge">Coming Soon</span>
                         </div>
-                        <p>Automate your testing and deployment pipelines using modern actions and runners.</p>
-                        <button class="card-btn" disabled>Coming Soon</button>
+                        <p>CI/CD turns software delivery into a repeatable system instead of a sequence of manual steps. The future docs will explain how code moves from commit to test, build, scan, and deployment, and why that automation matters for reliability, speed, and safer releases. Learners will see the structure of pipelines, runners, jobs, artifacts, environment variables, secrets, approvals, and rollback patterns, along with examples that can be adapted to GitHub Actions, GitLab CI, or similar tools. The section will also show how to keep pipelines readable and maintainable so teams can spot failures quickly and avoid brittle release processes. Once published, it will serve as a practical reference for people who want to understand what happens between pushing code and seeing it live in production.</p>
                     </div>
 
-                    <div class="card disabled">
+                    <!-- Cloud Preview -->
+                    <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Cloud</h3>
-                            <span class="badge">Coming Soon</span>
                         </div>
-                        <p>Understand essential cloud infrastructure, networking, and serverless concepts.</p>
-                        <button class="card-btn" disabled>Coming Soon</button>
+                        <p>The cloud section will explain the building blocks behind modern infrastructure: virtual machines, managed networking, storage, identity, load balancing, and the services that remove a lot of operational work from individual teams. It matters because almost every container platform and deployment workflow eventually depends on cloud primitives, whether you are hosting a demo app or designing something that handles real traffic. Learners will find plain-language guides on how cloud regions, availability zones, IAM, DNS, object storage, and serverless options fit together, plus examples that connect those services back to Docker and Kubernetes workflows. The full docs will aim to make cloud concepts less abstract by showing how decisions about cost, reliability, and access control show up in everyday architecture choices.</p>
                     </div>
 
-                    <div class="card disabled">
+                    <!-- Terraform Preview -->
+                    <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Terraform</h3>
-                            <span class="badge">Coming Soon</span>
                         </div>
-                        <p>Infrastructure as Code. Provision and manage resources with declarative files.</p>
-                        <button class="card-btn" disabled>Coming Soon</button>
+                        <p>Terraform brings infrastructure into the same kind of versioned workflow people already expect from application code. This section will show how declarative configuration, providers, state, modules, variables, outputs, and plan/apply cycles work together to create repeatable environments. It matters because teams need a way to provision cloud resources consistently, review changes before they land, and keep environments from drifting over time. When the docs are live, learners will find a step-by-step introduction to writing clean modules, organizing state safely, reviewing plans, and handling common patterns like remote backends and reusable stacks. The goal is to give readers enough context to understand not just how to run Terraform commands, but why infrastructure as code changes the way operations and development teams collaborate.</p>
                     </div>
 
                 </div>
@@ -734,8 +729,9 @@
                 &copy; 2026 DevOps Hub. All rights reserved.
             </div>
             <div class="footer-links">
-                <a href="#">GitHub</a>
-                <a href="#">Contact</a>
+                <a href="/about">About</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms">Terms</a>
             </div>
         </div>
     </footer>
